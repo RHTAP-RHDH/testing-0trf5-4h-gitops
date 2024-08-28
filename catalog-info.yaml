@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: python-tre4-yde4r-gitops
+  description: This is GitOps manifest for python-tre4-yde4r   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: python-tre4-yde4r
+    janus-idp.io/tekton: python-tre4-yde4r
+    backstage.io/kubernetes-id: python-tre4-yde4r 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:python-tre4-yde4r

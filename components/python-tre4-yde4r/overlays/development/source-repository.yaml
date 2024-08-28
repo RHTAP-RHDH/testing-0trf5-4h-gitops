@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: python-tre4-yde4r-repository
+spec:
+  url: https://github.com/RHTAP-RHDH/testing-0trf5-4h
